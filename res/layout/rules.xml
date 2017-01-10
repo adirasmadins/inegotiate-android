@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:background="#000000" android:layout_width="-1" android:layout_height="-1"
+    <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2">
+        <TextView android:textSize="35sp" android:gravity="11" android:id="@id/textView4" android:layout_width="235dp" android:layout_height="-2" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="Rules" style="@style/page_title_style" />
+        <ImageView android:gravity="11" android:id="@id/backImageButton" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:src="@drawable/back" android:scaleType="7" />
+        <TextView android:textSize="40sp" android:gravity="11" android:id="@id/addRuleTextView" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:text="+" style="@style/page_title_style" />
+    </LinearLayout>
+    <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="15dp" />
+    <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2">
+        <TextView android:textSize="15sp" android:gravity="3" android:id="@id/empty" android:layout_width="-1" android:layout_height="-1" android:layout_marginLeft="40dp" android:layout_marginTop="20dp" android:layout_marginRight="40dp" android:layout_marginBottom="150dp" android:text="No rules found." style="@style/page_title_style" />
+        <ListView android:id="@id/listView1" android:layout_width="-1" android:layout_height="400dp" />
+    </LinearLayout>
+</LinearLayout>

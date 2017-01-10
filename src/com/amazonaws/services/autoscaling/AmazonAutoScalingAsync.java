@@ -1,0 +1,193 @@
+package com.amazonaws.services.autoscaling;
+
+import com.amazonaws.AmazonClientException;
+import com.amazonaws.AmazonServiceException;
+import com.amazonaws.handlers.AsyncHandler;
+import com.amazonaws.services.autoscaling.model.CreateAutoScalingGroupRequest;
+import com.amazonaws.services.autoscaling.model.CreateLaunchConfigurationRequest;
+import com.amazonaws.services.autoscaling.model.CreateOrUpdateTagsRequest;
+import com.amazonaws.services.autoscaling.model.DeleteAutoScalingGroupRequest;
+import com.amazonaws.services.autoscaling.model.DeleteLaunchConfigurationRequest;
+import com.amazonaws.services.autoscaling.model.DeleteNotificationConfigurationRequest;
+import com.amazonaws.services.autoscaling.model.DeletePolicyRequest;
+import com.amazonaws.services.autoscaling.model.DeleteScheduledActionRequest;
+import com.amazonaws.services.autoscaling.model.DeleteTagsRequest;
+import com.amazonaws.services.autoscaling.model.DescribeAdjustmentTypesRequest;
+import com.amazonaws.services.autoscaling.model.DescribeAdjustmentTypesResult;
+import com.amazonaws.services.autoscaling.model.DescribeAutoScalingGroupsRequest;
+import com.amazonaws.services.autoscaling.model.DescribeAutoScalingGroupsResult;
+import com.amazonaws.services.autoscaling.model.DescribeAutoScalingInstancesRequest;
+import com.amazonaws.services.autoscaling.model.DescribeAutoScalingInstancesResult;
+import com.amazonaws.services.autoscaling.model.DescribeAutoScalingNotificationTypesRequest;
+import com.amazonaws.services.autoscaling.model.DescribeAutoScalingNotificationTypesResult;
+import com.amazonaws.services.autoscaling.model.DescribeLaunchConfigurationsRequest;
+import com.amazonaws.services.autoscaling.model.DescribeLaunchConfigurationsResult;
+import com.amazonaws.services.autoscaling.model.DescribeMetricCollectionTypesRequest;
+import com.amazonaws.services.autoscaling.model.DescribeMetricCollectionTypesResult;
+import com.amazonaws.services.autoscaling.model.DescribeNotificationConfigurationsRequest;
+import com.amazonaws.services.autoscaling.model.DescribeNotificationConfigurationsResult;
+import com.amazonaws.services.autoscaling.model.DescribePoliciesRequest;
+import com.amazonaws.services.autoscaling.model.DescribePoliciesResult;
+import com.amazonaws.services.autoscaling.model.DescribeScalingActivitiesRequest;
+import com.amazonaws.services.autoscaling.model.DescribeScalingActivitiesResult;
+import com.amazonaws.services.autoscaling.model.DescribeScalingProcessTypesRequest;
+import com.amazonaws.services.autoscaling.model.DescribeScalingProcessTypesResult;
+import com.amazonaws.services.autoscaling.model.DescribeScheduledActionsRequest;
+import com.amazonaws.services.autoscaling.model.DescribeScheduledActionsResult;
+import com.amazonaws.services.autoscaling.model.DescribeTagsRequest;
+import com.amazonaws.services.autoscaling.model.DescribeTagsResult;
+import com.amazonaws.services.autoscaling.model.DescribeTerminationPolicyTypesRequest;
+import com.amazonaws.services.autoscaling.model.DescribeTerminationPolicyTypesResult;
+import com.amazonaws.services.autoscaling.model.DisableMetricsCollectionRequest;
+import com.amazonaws.services.autoscaling.model.EnableMetricsCollectionRequest;
+import com.amazonaws.services.autoscaling.model.ExecutePolicyRequest;
+import com.amazonaws.services.autoscaling.model.PutNotificationConfigurationRequest;
+import com.amazonaws.services.autoscaling.model.PutScalingPolicyRequest;
+import com.amazonaws.services.autoscaling.model.PutScalingPolicyResult;
+import com.amazonaws.services.autoscaling.model.PutScheduledUpdateGroupActionRequest;
+import com.amazonaws.services.autoscaling.model.ResumeProcessesRequest;
+import com.amazonaws.services.autoscaling.model.SetDesiredCapacityRequest;
+import com.amazonaws.services.autoscaling.model.SetInstanceHealthRequest;
+import com.amazonaws.services.autoscaling.model.SuspendProcessesRequest;
+import com.amazonaws.services.autoscaling.model.TerminateInstanceInAutoScalingGroupRequest;
+import com.amazonaws.services.autoscaling.model.TerminateInstanceInAutoScalingGroupResult;
+import com.amazonaws.services.autoscaling.model.UpdateAutoScalingGroupRequest;
+import java.util.concurrent.Future;
+
+public interface AmazonAutoScalingAsync extends AmazonAutoScaling {
+    Future<Void> createAutoScalingGroupAsync(CreateAutoScalingGroupRequest createAutoScalingGroupRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> createAutoScalingGroupAsync(CreateAutoScalingGroupRequest createAutoScalingGroupRequest, AsyncHandler<CreateAutoScalingGroupRequest, Void> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> createLaunchConfigurationAsync(CreateLaunchConfigurationRequest createLaunchConfigurationRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> createLaunchConfigurationAsync(CreateLaunchConfigurationRequest createLaunchConfigurationRequest, AsyncHandler<CreateLaunchConfigurationRequest, Void> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> createOrUpdateTagsAsync(CreateOrUpdateTagsRequest createOrUpdateTagsRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> createOrUpdateTagsAsync(CreateOrUpdateTagsRequest createOrUpdateTagsRequest, AsyncHandler<CreateOrUpdateTagsRequest, Void> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> deleteAutoScalingGroupAsync(DeleteAutoScalingGroupRequest deleteAutoScalingGroupRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> deleteAutoScalingGroupAsync(DeleteAutoScalingGroupRequest deleteAutoScalingGroupRequest, AsyncHandler<DeleteAutoScalingGroupRequest, Void> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> deleteLaunchConfigurationAsync(DeleteLaunchConfigurationRequest deleteLaunchConfigurationRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> deleteLaunchConfigurationAsync(DeleteLaunchConfigurationRequest deleteLaunchConfigurationRequest, AsyncHandler<DeleteLaunchConfigurationRequest, Void> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> deleteNotificationConfigurationAsync(DeleteNotificationConfigurationRequest deleteNotificationConfigurationRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> deleteNotificationConfigurationAsync(DeleteNotificationConfigurationRequest deleteNotificationConfigurationRequest, AsyncHandler<DeleteNotificationConfigurationRequest, Void> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> deletePolicyAsync(DeletePolicyRequest deletePolicyRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> deletePolicyAsync(DeletePolicyRequest deletePolicyRequest, AsyncHandler<DeletePolicyRequest, Void> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> deleteScheduledActionAsync(DeleteScheduledActionRequest deleteScheduledActionRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> deleteScheduledActionAsync(DeleteScheduledActionRequest deleteScheduledActionRequest, AsyncHandler<DeleteScheduledActionRequest, Void> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> deleteTagsAsync(DeleteTagsRequest deleteTagsRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> deleteTagsAsync(DeleteTagsRequest deleteTagsRequest, AsyncHandler<DeleteTagsRequest, Void> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<DescribeAdjustmentTypesResult> describeAdjustmentTypesAsync(DescribeAdjustmentTypesRequest describeAdjustmentTypesRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<DescribeAdjustmentTypesResult> describeAdjustmentTypesAsync(DescribeAdjustmentTypesRequest describeAdjustmentTypesRequest, AsyncHandler<DescribeAdjustmentTypesRequest, DescribeAdjustmentTypesResult> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<DescribeAutoScalingGroupsResult> describeAutoScalingGroupsAsync(DescribeAutoScalingGroupsRequest describeAutoScalingGroupsRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<DescribeAutoScalingGroupsResult> describeAutoScalingGroupsAsync(DescribeAutoScalingGroupsRequest describeAutoScalingGroupsRequest, AsyncHandler<DescribeAutoScalingGroupsRequest, DescribeAutoScalingGroupsResult> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<DescribeAutoScalingInstancesResult> describeAutoScalingInstancesAsync(DescribeAutoScalingInstancesRequest describeAutoScalingInstancesRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<DescribeAutoScalingInstancesResult> describeAutoScalingInstancesAsync(DescribeAutoScalingInstancesRequest describeAutoScalingInstancesRequest, AsyncHandler<DescribeAutoScalingInstancesRequest, DescribeAutoScalingInstancesResult> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<DescribeAutoScalingNotificationTypesResult> describeAutoScalingNotificationTypesAsync(DescribeAutoScalingNotificationTypesRequest describeAutoScalingNotificationTypesRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<DescribeAutoScalingNotificationTypesResult> describeAutoScalingNotificationTypesAsync(DescribeAutoScalingNotificationTypesRequest describeAutoScalingNotificationTypesRequest, AsyncHandler<DescribeAutoScalingNotificationTypesRequest, DescribeAutoScalingNotificationTypesResult> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<DescribeLaunchConfigurationsResult> describeLaunchConfigurationsAsync(DescribeLaunchConfigurationsRequest describeLaunchConfigurationsRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<DescribeLaunchConfigurationsResult> describeLaunchConfigurationsAsync(DescribeLaunchConfigurationsRequest describeLaunchConfigurationsRequest, AsyncHandler<DescribeLaunchConfigurationsRequest, DescribeLaunchConfigurationsResult> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<DescribeMetricCollectionTypesResult> describeMetricCollectionTypesAsync(DescribeMetricCollectionTypesRequest describeMetricCollectionTypesRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<DescribeMetricCollectionTypesResult> describeMetricCollectionTypesAsync(DescribeMetricCollectionTypesRequest describeMetricCollectionTypesRequest, AsyncHandler<DescribeMetricCollectionTypesRequest, DescribeMetricCollectionTypesResult> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<DescribeNotificationConfigurationsResult> describeNotificationConfigurationsAsync(DescribeNotificationConfigurationsRequest describeNotificationConfigurationsRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<DescribeNotificationConfigurationsResult> describeNotificationConfigurationsAsync(DescribeNotificationConfigurationsRequest describeNotificationConfigurationsRequest, AsyncHandler<DescribeNotificationConfigurationsRequest, DescribeNotificationConfigurationsResult> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<DescribePoliciesResult> describePoliciesAsync(DescribePoliciesRequest describePoliciesRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<DescribePoliciesResult> describePoliciesAsync(DescribePoliciesRequest describePoliciesRequest, AsyncHandler<DescribePoliciesRequest, DescribePoliciesResult> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<DescribeScalingActivitiesResult> describeScalingActivitiesAsync(DescribeScalingActivitiesRequest describeScalingActivitiesRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<DescribeScalingActivitiesResult> describeScalingActivitiesAsync(DescribeScalingActivitiesRequest describeScalingActivitiesRequest, AsyncHandler<DescribeScalingActivitiesRequest, DescribeScalingActivitiesResult> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<DescribeScalingProcessTypesResult> describeScalingProcessTypesAsync(DescribeScalingProcessTypesRequest describeScalingProcessTypesRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<DescribeScalingProcessTypesResult> describeScalingProcessTypesAsync(DescribeScalingProcessTypesRequest describeScalingProcessTypesRequest, AsyncHandler<DescribeScalingProcessTypesRequest, DescribeScalingProcessTypesResult> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<DescribeScheduledActionsResult> describeScheduledActionsAsync(DescribeScheduledActionsRequest describeScheduledActionsRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<DescribeScheduledActionsResult> describeScheduledActionsAsync(DescribeScheduledActionsRequest describeScheduledActionsRequest, AsyncHandler<DescribeScheduledActionsRequest, DescribeScheduledActionsResult> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<DescribeTagsResult> describeTagsAsync(DescribeTagsRequest describeTagsRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<DescribeTagsResult> describeTagsAsync(DescribeTagsRequest describeTagsRequest, AsyncHandler<DescribeTagsRequest, DescribeTagsResult> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<DescribeTerminationPolicyTypesResult> describeTerminationPolicyTypesAsync(DescribeTerminationPolicyTypesRequest describeTerminationPolicyTypesRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<DescribeTerminationPolicyTypesResult> describeTerminationPolicyTypesAsync(DescribeTerminationPolicyTypesRequest describeTerminationPolicyTypesRequest, AsyncHandler<DescribeTerminationPolicyTypesRequest, DescribeTerminationPolicyTypesResult> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> disableMetricsCollectionAsync(DisableMetricsCollectionRequest disableMetricsCollectionRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> disableMetricsCollectionAsync(DisableMetricsCollectionRequest disableMetricsCollectionRequest, AsyncHandler<DisableMetricsCollectionRequest, Void> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> enableMetricsCollectionAsync(EnableMetricsCollectionRequest enableMetricsCollectionRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> enableMetricsCollectionAsync(EnableMetricsCollectionRequest enableMetricsCollectionRequest, AsyncHandler<EnableMetricsCollectionRequest, Void> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> executePolicyAsync(ExecutePolicyRequest executePolicyRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> executePolicyAsync(ExecutePolicyRequest executePolicyRequest, AsyncHandler<ExecutePolicyRequest, Void> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> putNotificationConfigurationAsync(PutNotificationConfigurationRequest putNotificationConfigurationRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> putNotificationConfigurationAsync(PutNotificationConfigurationRequest putNotificationConfigurationRequest, AsyncHandler<PutNotificationConfigurationRequest, Void> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<PutScalingPolicyResult> putScalingPolicyAsync(PutScalingPolicyRequest putScalingPolicyRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<PutScalingPolicyResult> putScalingPolicyAsync(PutScalingPolicyRequest putScalingPolicyRequest, AsyncHandler<PutScalingPolicyRequest, PutScalingPolicyResult> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> putScheduledUpdateGroupActionAsync(PutScheduledUpdateGroupActionRequest putScheduledUpdateGroupActionRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> putScheduledUpdateGroupActionAsync(PutScheduledUpdateGroupActionRequest putScheduledUpdateGroupActionRequest, AsyncHandler<PutScheduledUpdateGroupActionRequest, Void> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> resumeProcessesAsync(ResumeProcessesRequest resumeProcessesRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> resumeProcessesAsync(ResumeProcessesRequest resumeProcessesRequest, AsyncHandler<ResumeProcessesRequest, Void> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> setDesiredCapacityAsync(SetDesiredCapacityRequest setDesiredCapacityRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> setDesiredCapacityAsync(SetDesiredCapacityRequest setDesiredCapacityRequest, AsyncHandler<SetDesiredCapacityRequest, Void> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> setInstanceHealthAsync(SetInstanceHealthRequest setInstanceHealthRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> setInstanceHealthAsync(SetInstanceHealthRequest setInstanceHealthRequest, AsyncHandler<SetInstanceHealthRequest, Void> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> suspendProcessesAsync(SuspendProcessesRequest suspendProcessesRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> suspendProcessesAsync(SuspendProcessesRequest suspendProcessesRequest, AsyncHandler<SuspendProcessesRequest, Void> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<TerminateInstanceInAutoScalingGroupResult> terminateInstanceInAutoScalingGroupAsync(TerminateInstanceInAutoScalingGroupRequest terminateInstanceInAutoScalingGroupRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<TerminateInstanceInAutoScalingGroupResult> terminateInstanceInAutoScalingGroupAsync(TerminateInstanceInAutoScalingGroupRequest terminateInstanceInAutoScalingGroupRequest, AsyncHandler<TerminateInstanceInAutoScalingGroupRequest, TerminateInstanceInAutoScalingGroupResult> asyncHandler) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> updateAutoScalingGroupAsync(UpdateAutoScalingGroupRequest updateAutoScalingGroupRequest) throws AmazonServiceException, AmazonClientException;
+
+    Future<Void> updateAutoScalingGroupAsync(UpdateAutoScalingGroupRequest updateAutoScalingGroupRequest, AsyncHandler<UpdateAutoScalingGroupRequest, Void> asyncHandler) throws AmazonServiceException, AmazonClientException;
+}

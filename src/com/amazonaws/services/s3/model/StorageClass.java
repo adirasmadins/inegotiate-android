@@ -1,0 +1,25 @@
+package com.amazonaws.services.s3.model;
+
+public enum StorageClass {
+    Standard("STANDARD"),
+    ReducedRedundancy("REDUCED_REDUNDANCY");
+    
+    private final String storageClassId;
+
+    private StorageClass(String str) {
+        this.storageClassId = str;
+    }
+
+    public static StorageClass fromValue(String str) throws IllegalArgumentException {
+        for (StorageClass storageClass : values()) {
+            if (storageClass.toString().equals(str)) {
+                return storageClass;
+            }
+        }
+        throw new IllegalArgumentException("Cannot create enum from " + str + " value!");
+    }
+
+    public String toString() {
+        return this.storageClassId;
+    }
+}

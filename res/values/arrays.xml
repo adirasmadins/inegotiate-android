@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="currency_array">
+        <item>Select Currency</item>
+        <item>US Dollar</item>
+        <item>British Pound</item>
+        <item>New Israeli Shekel</item>
+        <item>European Euro</item>
+    </string-array>
+    <string-array name="comm_methods">
+        <item>NFC</item>
+        <item>Do Not Communicate</item>
+        <item>Delete</item>
+    </string-array>
+</resources>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.doviknissim.inegotiate.app">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <application android:debuggable="true" android:icon="@drawable/inegotiate2" android:label="@string/app_name">
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|uiMode" android:launchMode="singleTop" android:name=".Main">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|uiMode" android:name=".Windows">
+            <intent-filter>
+                <action android:name="android.intent.action.WINDOWS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Settings">
+            <intent-filter>
+                <action android:name="android.intent.action.SETTINGS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation|screenLayout|screenSize|uiMode" android:name=".Product">
+            <intent-filter>
+                <action android:name="android.intent.action.PRODUCT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Contact"> android:configChanges="orientation|screenLayout|keyboardHidden|uiMode|screenLayout|screenSize"&gt; <intent-filter>
+                <action android:name="android.intent.action.CONTACT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Offer">
+            <intent-filter>
+                <action android:name="android.intent.action.OFFER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Statistics">
+            <intent-filter>
+                <action android:name="android.intent.action.STATISTICS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ReceivedNfcHome">
+            <intent-filter>
+                <action android:name="android.intent.action.RECEIVEDNFCHOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ReceivedDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.RECEIVEDDISPLAY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Wallet">
+            <intent-filter>
+                <action android:name="android.intent.action.WALLET"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Counter">
+            <intent-filter>
+                <action android:name="android.intent.action.COUNTER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".OfferSearch">
+            <intent-filter>
+                <action android:name="android.intent.action.OFFERSEARCH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".INegotiateNFC">
+            <intent-filter>
+                <action android:name="android.intent.action.INEGOTIATENFC"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Test">
+            <intent-filter>
+                <action android:name="android.intent.action.TEST"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".OfferSummary">
+            <intent-filter>
+                <action android:name="android.intent.action.OFFERSUMMARY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Recent">
+            <intent-filter>
+                <action android:name="android.intent.action.RECENT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".EditProduct">
+            <intent-filter>
+                <action android:name="android.intent.action.EDITPRODUCT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".EditContact">
+            <intent-filter>
+                <action android:name="android.intent.action.EDITCONTACT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".EditOffer">
+            <intent-filter>
+                <action android:name="android.intent.action.EDITOFFER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".OfferHistory">
+            <intent-filter>
+                <action android:name="android.intent.action.OFFERHISTORY"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ReceivedEmailHome">
+            <intent-filter>
+                <action android:name="android.intent.action.RECEIVEDEMAILHOME"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="inegotiate.blogspot.com" android:pathPrefix="/get" android:scheme="http"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Congrats">
+            <intent-filter>
+                <action android:name="android.intent.action.CONGRATS"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".Invite">
+            <intent-filter>
+                <action android:name="android.intent.action.INVITE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".INegotiatePaypal">
+            <intent-filter>
+                <action android:name="android.intent.action.INEGOTIATEPAYPAL"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".INegotiateRules">
+            <intent-filter>
+                <action android:name="android.intent.action.INEGOTIATERULES"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".INegotiateRule">
+            <intent-filter>
+                <action android:name="android.intent.action.INEGOTIATERULE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:name="com.paypal.android.MEP.PayPalActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode" android:name="com.google.ads.AdActivity"/>
+    </application>
+</manifest>

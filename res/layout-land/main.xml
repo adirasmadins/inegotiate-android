@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:background="#000000" android:layout_width="-1" android:layout_height="-1">
+    <TextView android:textSize="40sp" android:textStyle="1" android:textColorHint="#0066ff" android:gravity="11" android:id="@id/textView2" android:layout_width="-1" android:layout_height="80dp" android:text="iNegotiate" style="@style/page_title_style" />
+    <TextView android:textSize="20sp" android:textStyle="1" android:textColorHint="#0066ff" android:gravity="11" android:id="@id/textView1" android:layout_width="-1" android:layout_height="30dp" android:text="is loading..." style="@style/page_title_style" />
+    <ImageView android:id="@id/imageView1" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginLeft="270dp" android:layout_marginTop="10dp" android:layout_marginRight="200dp" android:layout_marginBottom="10dp" android:src="@drawable/inegotiate2" />
+</LinearLayout>

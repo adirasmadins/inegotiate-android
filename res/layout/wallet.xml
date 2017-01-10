@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:background="#000000" android:layout_width="-1" android:layout_height="-1">
+    <TextView android:textSize="35sp" android:gravity="11" android:id="@id/textView4" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="20dp" android:text="Received an offer" style="@style/page_title_style" />
+    <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2">
+        <TextView android:textSize="22sp" android:gravity="11" android:id="@id/textView4" android:layout_width="286dp" android:layout_height="-2" android:layout_marginLeft="40dp" android:layout_marginRight="40dp" android:layout_marginBottom="10dp" android:text="payment Details:" android:layout_weight="0.76" style="@style/page_title_style" />
+    </LinearLayout>
+    <ImageView android:gravity="11" android:id="@id/imageView1" android:layout_width="200dp" android:layout_height="200dp" android:layout_marginLeft="60dp" android:layout_marginTop="20dp" android:layout_marginRight="60dp" android:src="@drawable/wallet" android:layout_weight="1.73" />
+    <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2" />
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2" />
+    <LinearLayout android:layout_width="-1" android:layout_height="-2" />
+    <LinearLayout android:orientation="1" android:layout_width="-1" android:layout_height="-2" />
+    <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2" />
+    <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2" />
+    <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="10dp" android:layout_weight="1.15" />
+    <LinearLayout android:layout_width="-1" android:layout_height="-2" android:layout_weight="0.72">
+        <Button android:textSize="25sp" android:textColor="#ff9900" android:id="@id/button1" android:background="@drawable/button_shape" android:layout_width="60dp" android:layout_height="70dp" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:layout_marginRight="10dp" android:text="Cancel" android:layout_weight="0.11" />
+        <Button android:textSize="25sp" android:textColor="#ff9900" android:id="@id/button2" android:background="@drawable/button_shape" android:layout_width="60dp" android:layout_height="70dp" android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:layout_marginRight="10dp" android:text="Next" android:layout_weight="0.11" />
+    </LinearLayout>
+</LinearLayout>

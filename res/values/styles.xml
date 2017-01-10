@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="action_button_style" parent="@android:style/Widget.Button">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:background">#ffff9900</item>
+        <item name="android:text"></item>
+        <item name="android:height">60.0dip</item>
+        <item name="android:width">100.0dip</item>
+    </style>
+    <style name="page_subtitle_style" parent="@android:style/TextAppearance">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff1589ff</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="page_title_style" parent="@android:style/TextAppearance">
+        <item name="android:textSize">30.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffff9900</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="statistics_style" parent="@android:style/TextAppearance">
+        <item name="android:textSize">5.0sp</item>
+        <item name="android:typeface">sans</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ff00ffcc</item>
+        <item name="android:gravity">center</item>
+    </style>
+</resources>

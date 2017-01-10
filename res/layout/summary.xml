@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="1" android:background="#000000" android:layout_width="-1" android:layout_height="-1"
+    <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2">
+        <TextView android:textSize="35sp" android:gravity="11" android:id="@id/textView4" android:layout_width="290dp" android:layout_height="-2" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="Offer summary" style="@style/page_subtitle_style" />
+        <ImageView android:gravity="11" android:id="@id/backImageButton" android:layout_width="35dp" android:layout_height="35dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:src="@drawable/back" android:scaleType="7" />
+    </LinearLayout>
+    <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="15dp" />
+    <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="15dp">
+        <ImageView android:id="@id/productIcon" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginRight="10dp" android:src="@drawable/inegotiate2" />
+        <LinearLayout android:orientation="1" android:layout_width="220dp" android:layout_height="-2">
+            <TextView android:textSize="15sp" android:gravity="3" android:id="@id/productTitle" android:layout_width="-1" android:layout_height="20dp" android:layout_marginBottom="2dp" android:text="Item" style="@style/page_subtitle_style" />
+            <TextView android:textSize="15sp" android:gravity="3" android:id="@id/productDescription" android:layout_width="-1" android:layout_height="20dp" android:layout_marginBottom="1dp" android:text="Product description" style="@style/page_subtitle_style" />
+        </LinearLayout>
+        <ImageView android:id="@id/editProduct" android:layout_width="30dp" android:layout_height="80dp" android:layout_marginRight="10dp" android:src="@drawable/edit" />
+    </LinearLayout>
+    <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="15dp">
+        <ImageView android:id="@id/contactIcon" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginRight="10dp" android:src="@drawable/inegotiate2" />
+        <LinearLayout android:orientation="1" android:layout_width="220dp" android:layout_height="-2">
+            <TextView android:textSize="15sp" android:gravity="3" android:id="@id/contactTitle" android:layout_width="-1" android:layout_height="25dp" android:layout_marginBottom="2dp" android:text="Contact:" style="@style/page_subtitle_style" />
+            <TextView android:textSize="15sp" android:gravity="3" android:id="@id/contactEmail" android:layout_width="-1" android:layout_height="20dp" android:layout_marginBottom="1dp" android:text="Contact Email" style="@style/page_subtitle_style" />
+            <TextView android:textSize="15sp" android:gravity="3" android:id="@id/contactCell" android:layout_width="-1" android:layout_height="20dp" android:layout_marginBottom="1dp" android:text="Contact Cell" style="@style/page_subtitle_style" />
+        </LinearLayout>
+        <ImageView android:id="@id/editContact" android:layout_width="30dp" android:layout_height="80dp" android:layout_marginRight="10dp" android:src="@drawable/edit" />
+    </LinearLayout>
+    <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="-2" android:layout_marginBottom="15dp">
+        <ImageView android:id="@id/offerIcon" android:layout_width="80dp" android:layout_height="80dp" android:layout_marginRight="10dp" android:src="@drawable/gift" />
+        <LinearLayout android:orientation="1" android:layout_width="220dp" android:layout_height="-2">
+            <TextView android:textSize="15sp" android:gravity="3" android:id="@id/offerTitle" android:layout_width="-1" android:layout_height="25dp" android:layout_marginBottom="2dp" android:text="Offer:" style="@style/page_subtitle_style" />
+            <TextView android:textSize="15sp" android:gravity="3" android:id="@id/offerDate" android:layout_width="-1" android:layout_height="20dp" android:layout_marginBottom="1dp" android:text="Offer date" style="@style/page_subtitle_style" />
+            <TextView android:textSize="15sp" android:gravity="3" android:id="@id/offerStatus" android:layout_width="-1" android:layout_height="20dp" android:layout_marginBottom="1dp" android:text="Offer Status" style="@style/page_subtitle_style" />
+        </LinearLayout>
+        <ImageView android:id="@id/editOffer" android:layout_width="30dp" android:layout_height="80dp" android:layout_marginRight="10dp" android:src="@drawable/edit" />
+    </LinearLayout>
+    <LinearLayout android:orientation="0" android:layout_width="-1" android:layout_height="30dp">
+        <TextView android:textSize="15sp" android:gravity="1" android:id="@id/seehistory" android:layout_width="-1" android:layout_height="20dp" android:layout_marginBottom="1dp" android:text="See offer history" style="@style/page_subtitle_style" />
+    </LinearLayout>
+    <LinearLayout android:layout_width="-1" android:layout_height="10dp" android:layout_weight="0.72" />
+    <LinearLayout android:layout_width="-1" android:layout_height="-2" android:layout_weight="0.72">
+        <Button android:textSize="25sp" android:textColor="#ff9900" android:id="@id/button1" android:background="@drawable/button_shape" android:layout_width="60dp" android:layout_height="70dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="Back" android:layout_weight="0.11" />
+        <Button android:textSize="25sp" android:textColor="#ff9900" android:id="@id/button2" android:background="@drawable/button_shape" android:layout_width="60dp" android:layout_height="70dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="Submit" android:layout_weight="0.11" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="-1" android:layout_height="65dp" android:layout_marginBottom="10dp">
+    <ImageView android:id="@id/icon" android:layout_width="65dp" android:layout_height="65dp" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:src="@drawable/inegotiate2" />
+    <LinearLayout android:orientation="1" android:layout_width="65dp" android:layout_height="65dp" android:layout_weight="0.74">
+        <TextView android:textSize="15sp" android:gravity="10" android:id="@id/middletext" android:layout_width="-1" android:layout_height="-2" android:text="Price" style="@style/page_subtitle_style" />
+        <TextView android:textSize="15sp" android:gravity="10" android:id="@id/toptext" android:layout_width="-1" android:layout_height="-2" android:text="Product" android:singleLine="true" style="@style/page_subtitle_style" />
+        <TextView android:textSize="15sp" android:gravity="10" android:id="@id/bottomtext" android:layout_width="-1" android:layout_height="-2" android:text="From/To" android:singleLine="true" style="@style/page_subtitle_style" />
+    </LinearLayout>
+    <ImageView android:layout_gravity="10" android:id="@id/select" android:layout_width="35dp" android:layout_height="65dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:src="@drawable/info" />
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, BargainItActivity!</string>
+    <string name="Negotiate">Negotiate</string>
+    <string name="app_name">iNegotiate</string>
+    <string name="product_name_default">Enter a product name</string>
+    <string name="take_photo">Take a photo</string>
+    <string name="product_description_default">Enter a description</string>
+    <string name="product_search_default">Search by product</string>
+    <string name="contact_name_default">Enter contact name</string>
+    <string name="contact_description_default">Enter a description</string>
+    <string name="contact_email_default">Enter e-mail address</string>
+    <string name="contact_tel_default">Enter a phone number</string>
+    <string name="contact_logo">Logo</string>
+    <string name="offer_amount">Amount</string>
+    <string name="select_contact">Select contact</string>
+    <string name="search_empty_results">To search for offers, please type in the name of the product for which the offer has been made.</string>
+    <string name="recent_empty_results">No offers found.</string>
+    <string name="invite_instruction">Invite potential negotiating partners to use iNegotiate:</string>
+    <string name="guidance_for_invites">"Guidance:
+Please enter a list of email adresseses separated by commas. e.g. lee@example.com,ron@example.com"</string>
+</resources>
