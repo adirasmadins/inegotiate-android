@@ -14,8 +14,8 @@ Are you able to go to the store owner and ask them to drop the price? They would
 store or suggest other product that are in your price range - but really what you wanted.
 
 Can you negotiate for a better price? Sure you can! but the problem is that there might be other people in the 
-store and if the store owner drops the price for you, s/he might be forced to do that for other clients as well
-- not the best position to be in! Ultimately the store owner will politely refuse
+store and if the store owner drops the price for you, s/he might be forced to do that for other clients as 
+well - not the best position to be in! Ultimately the store owner will politely refuse
 
 So what can you do?  You need a discrete and an efficient way to bargain for the price of the sweater?
 That's where iNegotiate comes in
